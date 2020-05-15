@@ -9,7 +9,11 @@ class BarangController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+       // $this->middleware(function($request,$next)(
+        //    if(gate::allaws('admin')) return $next($request);
+         //   abort(403,'Anda tidak memiliki cukup akses');
+        //));
+       // $this->middleware('auth');
     }
     /**
      * Display a listing of the resource.
